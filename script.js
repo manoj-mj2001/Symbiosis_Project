@@ -21,11 +21,3 @@ window.onload = () => {
     document.querySelector(".header").classList.remove("active");
   }
 };
-document.addEventListener("DOMContentLoaded", function () {
-  const contactForm = document.getElementById("contactForm");
-  contactForm.addEventListener("submit", function (event) {
-    event.preventDefault();
-
-    contactForm.reset();
-  });
-});
