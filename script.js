@@ -21,3 +21,5 @@ window.onload = () => {
     document.querySelector(".header").classList.remove("active");
   }
 };
+
+document.getElementById("contactForm").reset();
