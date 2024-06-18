@@ -16,6 +16,48 @@ html {
   scroll-padding-top: 5rem;
 }
 
+.wavehand {
+  animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  10% {
+    transform: rotate(14deg);
+  }
+
+  20% {
+    transform: rotate(-8deg);
+  }
+
+  30% {
+    transform: rotate(14deg);
+  }
+
+  40% {
+    transform: rotate(-4deg);
+  }
+
+  50% {
+    transform: rotate(10deg);
+  }
+
+  60% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
 section {
   padding: 5rem 9%;
 }
@@ -149,36 +191,7 @@ button:hover {
 }
 .header #menu-btn {
   display: none;
-}
-
-.search-form {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.8);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 10000;
-  transform: translateY(-110%);
-}
-
-.search-form.active {
-  transform: translateY(0%);
-}
-
-#close-search {
-  position: absolute;
-  top: 1.5rem;
-  right: 2.5rem;
-  cursor: pointer;
-  color: white;
-  font-size: 5rem;
-}
-#close-search:hover {
-  color: green;
+  color: black;
 }
 
 form {
@@ -422,6 +435,12 @@ form label:hover {
   section {
     padding: 3rem 2rem;
   }
+  .input {
+    width: 42vw !important;
+  }
+  button {
+    width: 42vw !important;
+  }
 }
 
 @media (max-width: 991px) {
@@ -455,7 +474,6 @@ form label:hover {
     z-index: 10000;
     width: 35rem;
     height: 100%;
-
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -478,20 +496,16 @@ form label:hover {
   .contact-form {
     flex-direction: column;
   }
-  .msg textarea {
-    height: 80px;
-  }
-  .input-fields,
-  .msg {
+  .input-fields {
     width: 100%;
   }
-  .input,
-  textarea {
-    width: 60vw !important;
+  .input {
+    width: 75vw !important;
   }
-  .msg {
-    margin-left: -20px;
+  button {
+    width: 75vw !important;
   }
+
   form {
     flex-direction: column;
     width: 70vw;
@@ -505,12 +519,14 @@ form label:hover {
   .heading {
     font-size: 3rem;
   }
-  .input,
-  textarea {
-    width: 70vw !important;
+  .input {
+    width: 79vw !important;
   }
   form {
     width: 50vw;
+  }
+  button {
+    width: 79vw;
   }
   .wrapper1 {
     padding: 10px;
