@@ -21,3 +21,40 @@ window.onload = () => {
     document.querySelector(".header").classList.remove("active");
   }
 };
+
+const btn = document.getElementById("contactBtn");
+
+function submit(event) {
+  event.preventDefault();
+  btn.value = "Sending...";
+
+  var formData = {
+    name: document.getElementById("name").value,
+    email: document.getElementById("email").value,
+    phone: document.getElementById("phone").value,
+    subject: document.getElementById("subject").value,
+  };
+
+  const serviceID = "mr.manoj@2001";
+  const templateID = "template@123";
+
+  emailjs.send(serviceID, templateID, formData).then(() => {
+    Swal.fire({
+      title: "sent!",
+      text: "Thanks for contacting us! We'll get back to you soon :)",
+      icon: "success",
+    })
+      .then((responseAlert) => {
+        if (responseAlert.isConfirmed) {
+          document.getElementById("contactForm").submit();
+        }
+      })
+      .catch(() => {
+        Swal.fire({
+          icon: "error",
+          title: "Oops...",
+          text: "Something went wrong!",
+        });
+      });
+  });
+}
