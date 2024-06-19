@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
-    <link rel="stylesheet" href="sweetalert2.min.css">
 </head>
 <body>
     <header class="header">
@@ -160,7 +159,7 @@
           <h1>Contact us</h1>
         </div>
         <div class="contact-form">
-            <form  action="https://formspree.io/f/mqazzzaw" method="POST" id="contactForm">
+            <form method="post" id="contactForm">
           
                 <div class="input-fields">
             
@@ -168,7 +167,7 @@
             <input type="email" class="input"  placeholder="E-mail" name="email" id="email" required/>
             <input type="number" class="input"  placeholder="Phone" name="phone" id="phone" required/>
             <input type="text" class="input"  placeholder="Subject" name="subject" id="subject" required/>
-            <button type="button" id="contactBtn" onclick="submit()">Send <i class="uil uil-message"></i>
+            <button type="submit" id="contactBtn">Send <i class="uil uil-message"></i>
           </div>
           
           </form>
@@ -205,7 +204,6 @@
     </section>
     <script src="script.js"></script>
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script src="sweetalert2.min.js"></script>
     <script type="text/javascript">
          (function() {
          emailjs.init('NKQ7Yu2ArVce3uzVV');
