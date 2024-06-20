@@ -34,10 +34,24 @@ document
 
     emailjs.sendForm(customerserviceID, customertemplateID, this).then(
       () => {
-        alert("Sent!");
+        Swal.fire({
+          title: "Sent!",
+          text: "Thanks for contacting us! :)",
+          icon: "success",
+          confirmButtonText: "Ok!",
+          confirmButtonColor: "#22bb33",
+        });
+        document.getElementById("contactForm").reset();
       },
-      (err) => {
-        alert(JSON.stringify(err));
+      () => {
+        Swal.fire({
+          title: "Error!",
+          text: "Something went wrong! :(",
+          icon: "error",
+          confirmButtonText: "Ok!",
+          confirmButtonColor: "#bb2124",
+        });
+        document.getElementById("contactForm").reset();
       }
     );
 
