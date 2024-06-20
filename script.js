@@ -29,15 +29,27 @@ document
     event.preventDefault();
     btn.value = "Sending...";
 
-    const serviceID = "mr.manoj@2001";
-    const templateID = "template@123";
+    const customerserviceID = "mr.manoj@2001";
+    const customertemplateID = "customertemplate@123";
 
-    emailjs.sendForm(serviceID, templateID, this).then(
+    emailjs.sendForm(customerserviceID, customertemplateID, this).then(
       () => {
         alert("Sent!");
       },
       (err) => {
         alert(JSON.stringify(err));
+      }
+    );
+
+    const ownerserviceID = "mr.manoj@2001";
+    const ownertemplateID = "ownertemplate@123 ";
+
+    emailjs.sendForm(ownerserviceID, ownertemplateID, this).then(
+      () => {
+        console.log("Sent!");
+      },
+      (err) => {
+        console.log(JSON.stringify(err));
       }
     );
   });
