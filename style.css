@@ -16,7 +16,7 @@ html {
   scroll-padding-top: 5rem;
 }
 
-.wavehand {
+animate__slideInDown .wavehand {
   animation-name: wave-animation;
   animation-duration: 2.5s;
   animation-iteration-count: infinite;
@@ -238,6 +238,7 @@ form label:hover {
 
 .home .content {
   width: 50rem;
+  height: 30rem;
 }
 .home .content span {
   font-size: 2rem;

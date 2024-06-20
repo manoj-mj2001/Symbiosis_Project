@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10/sweetalert2.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
     <header class="header">
@@ -31,11 +32,23 @@
                 <div class="box" style="background: url(images/home1.jpg) no-repeat;">
                 <div class="content">
                     <span>Welcome! We're thrilled to have you here&#128522;</span>
-                    <h3>Travel far, travel wide, travel often<span class="wavehand">&#128649;</span></h3>
+                    <h3 class="animate__animated animate__slideInDown">Travel far</h3>
+                        <h3 class="animate__animated animate__slideInRight">travel wide</h3>
+                        <h3 class="animate__animated animate__slideInUp">travel often<span class="wavehand">&#128649;</span></h3>
                     <p>Discover <b>Travel Guru's</b> best deals and offers now!</p>
-                    <a href="#category" class="btn">Get Started!</a>
+                    <a href="#category" class="btn">Get Started!</a>    
+                    <dotlottie-player
+                    src="https://lottie.host/272b60dd-462d-42a3-8ed6-fec4143633d6/X4FxBascRI.json"
+                    speed="1"
+                    style="width: 400px; height: 200px"
+                    direction="2"
+                    playMode="normal"
+                    loop
+                    autoplay
+                  ></dotlottie-player>
+                  
                 </div>
-                </div>  
+             </div>  
         </div>
     </section>
 
@@ -205,11 +218,13 @@
     </section>
     <script src="script.js"></script>
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script> 
     <script type="text/javascript">
          (function() {
          emailjs.init('NKQ7Yu2ArVce3uzVV');
         })();
     </script>
+     <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+ 
 </body>
 </html>
