@@ -5,9 +5,7 @@ This is a static travel website designed to inspire wanderlust and provide infor
 ### **Features**
 
 - **Responsive Design:** Fully responsive layout optimized for all devices.
-- 
 - **Dynamic Contact Form:** Integrated with EmailJS for seamless email communication.
-- 
 - **Interactive Alerts:** Utilizes SweetAlert for user-friendly confirmation messages.
 
 ### **Technologies Used :**
