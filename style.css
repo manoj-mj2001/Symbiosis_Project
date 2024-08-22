@@ -68,20 +68,26 @@ section {
   color: black;
   cursor: pointer;
   background: none;
-  font-size: 1.7rem;
+  font-size: 1.8rem;
+  font-weight: 500;
   padding: 1rem 3rem;
   border-radius: 40px;
 }
+
 .btn:hover {
-  background: black;
+  background: crimson;
   color: white;
+  outline: none;
+  border: none;
 }
+
 .heading {
   text-align: center;
   margin-bottom: 2.5rem;
   font-size: 4rem;
   color: #10221b;
 }
+
 .header {
   position: fixed;
   top: 0;
@@ -99,8 +105,10 @@ section {
 .header .logo {
   margin-right: auto;
   font-size: 2.5rem;
-  color: black;
-  font-weight: bolder;
+  color: crimson;
+  -webkit-text-stroke: 0.5px whitesmoke;
+  display: inline-block;
+  font-weight: 900;
 }
 .wrapper1 {
   margin-left: auto;
@@ -114,13 +122,11 @@ section {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
 }
 
-.wrapper1 .title1 h1 {
-  color: green;
+.wrapper1 h1 {
   text-align: center;
-  margin-bottom: 25px;
-  font-size: 3.5rem;
+  color: crimson;
+  font-size: 35px;
 }
-
 .contact-form {
   width: 100%;
 }
@@ -149,7 +155,7 @@ section {
 button {
   margin-top: 1.2rem;
   display: inline-block;
-  border: 0.2rem solid green;
+  border: 0.2rem solid crimson;
   color: black;
   cursor: pointer;
   font-size: 2rem;
@@ -159,17 +165,18 @@ button {
 }
 
 button:hover {
-  background-color: green;
+  background-color: crimson;
   color: white;
 }
 
 .header .navbar a {
   margin-left: 2rem;
-  font-size: 1.7rem;
+  font-size: 1.8rem;
   color: black;
+  font-weight: 500;
 }
 .header .navbar a:hover {
-  color: green;
+  color: crimson;
 }
 .header .navbar #nav-close {
   font-size: 5rem;
@@ -243,12 +250,13 @@ form label:hover {
 .home .content span {
   font-size: 2rem;
   color: black;
-  font-size: 20
+  font-size: 20px;
   font-weight: 700;
 }
 .home .content h3 {
   font-size: 3rem;
-  color: green;
+  color: crimson;
+  -webkit-text-stroke: 0.5px whitesmoke;
   padding-top: 0.5rem;
   text-transform: uppercase;
   text-align: left;
@@ -283,6 +291,7 @@ form label:hover {
   background: linear-gradient(to right, #2545fc, #0de3eb, #100a2e, #eedd44);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+  background-clip: text;
 }
 
 .category .box-container .box p {
@@ -291,6 +300,7 @@ form label:hover {
   padding: 1rem 0;
   line-height: 2;
 }
+
 .packages {
   background: #eee;
 }
@@ -310,10 +320,13 @@ form label:hover {
   -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   border-radius: 0.5rem;
+  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
 }
 
 .packages .box-container .box:hover {
-  background: #10221b;
+  background: crimson;
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .packages .box-container .box:hover .content > * {
@@ -326,7 +339,7 @@ form label:hover {
 
 .packages .box-container .box:hover .btn:hover {
   background: #fff;
-  color: #10221b;
+  color: crimson;
 }
 
 .packages .box-container .box .image {
@@ -362,8 +375,8 @@ form label:hover {
 }
 
 .packages .box-container .box .content .price {
-  font-size: 2rem;
-  color: #219150;
+  font-size: 2.2rem;
+  color: green;
 }
 
 .footer {
@@ -404,12 +417,12 @@ form label:hover {
 }
 
 .footer .box-container .box a i {
-  color: #219150;
+  color: crimson;
   padding-right: 0.5rem;
 }
 
 .footer .box-container .box a:hover {
-  color: #219150;
+  color: crimson;
 }
 
 .footer .box-container .box a:hover i {
@@ -426,7 +439,7 @@ form label:hover {
 }
 
 .footer .credit span {
-  color: #219150;
+  color: crimson;
 }
 
 @media (max-width: 1200px) {
