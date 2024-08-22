@@ -387,9 +387,9 @@ form label:hover {
       from(rgba(0, 0, 0, 0.5)),
       to(rgba(0, 0, 0, 0.5))
     ),
-    url(../images/footer-bg.jpg) no-repeat;
+    url(../images/footer1.jpg) no-repeat;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../images/footer.jpg) no-repeat;
+    url(../images/footer1.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -440,6 +440,7 @@ form label:hover {
 
 .footer .credit span {
   color: crimson;
+  font-weight: 500;
 }
 
 @media (max-width: 1200px) {
