@@ -577,7 +577,6 @@ form label:hover {
     padding: 10px;
   }
 
-  /* Styles for the hamburger menu icon */
   .header #menu-btn {
     display: inline-block;
     font-size: 2rem;
@@ -585,9 +584,8 @@ form label:hover {
     cursor: pointer;
   }
 
-  /* Ensure navbar is responsive and can be toggled */
   .header .navbar {
-    display: none; /* Hide navbar by default */
+    display: none;
     flex-direction: column;
     width: 100%;
     position: fixed;
@@ -599,7 +597,7 @@ form label:hover {
   }
 
   .header .navbar.active {
-    display: flex; /* Show navbar items when active */
+    display: flex;
     left: 0;
   }
 
@@ -619,7 +617,6 @@ form label:hover {
     padding: 1rem;
   }
 
-  /* Style close button */
   .header .navbar #nav-close {
     display: block;
     font-size: 2rem;
