@@ -98,6 +98,24 @@ section {
   display: flex;
   align-items: center;
 }
+/* Ensure the hamburger menu is visible on mobile */
+.header #menu-btn {
+  display: inline-block; /* Ensure it is displayed */
+}
+
+/* Show the navbar when active */
+.header .navbar.active {
+  left: 0;
+  box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8);
+}
+
+/* Ensure the close icon is visible on mobile */
+.header .navbar #nav-close {
+  display: block; /* Ensure it is displayed */
+  font-size: 5rem;
+  color: black;
+}
+
 .header.active {
   background: #fff;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
@@ -478,6 +496,9 @@ form label:hover {
   }
 }
 @media (max-width: 768px) {
+  body {
+    width: 100% !important;
+  }
   .header #menu-btn {
     display: inline-block;
   }
@@ -528,22 +549,82 @@ form label:hover {
 }
 
 @media (max-width: 450px) {
+  body {
+    width: 100%;
+  }
+
   html {
     font-size: 50%;
   }
+
   .heading {
     font-size: 3rem;
   }
+
   .input {
     width: 79vw !important;
   }
+
   form {
     width: 50vw;
   }
+
   button {
     width: 79vw;
   }
+
   .wrapper1 {
     padding: 10px;
+  }
+
+  /* Styles for the hamburger menu icon */
+  .header #menu-btn {
+    display: inline-block;
+    font-size: 2rem;
+    margin: 10px;
+    cursor: pointer;
+  }
+
+  /* Ensure navbar is responsive and can be toggled */
+  .header .navbar {
+    display: none; /* Hide navbar by default */
+    flex-direction: column;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    background: white;
+    height: 100%;
+    transition: left 0.3s ease;
+  }
+
+  .header .navbar.active {
+    display: flex; /* Show navbar items when active */
+    left: 0;
+  }
+
+  .header .navbar ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .header .navbar ul li {
+    margin: 1rem 0;
+    text-align: center;
+  }
+
+  .header .navbar ul li a {
+    font-size: 1.2rem;
+    padding: 1rem;
+  }
+
+  /* Style close button */
+  .header .navbar #nav-close {
+    display: block;
+    font-size: 2rem;
+    color: black;
+    margin: 1rem;
+    cursor: pointer;
   }
 }
