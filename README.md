@@ -1,4 +1,4 @@
-## **Travel Website**
+## **Travel Website (Travel Guru)**
 
 This is a static travel website designed to inspire wanderlust and provide information about various travel destinations. The site features a dynamic contact form that integrates with **[EmailJS](https://www.emailjs.com/)** to send messages directly to your email. Upon successful submission, **[SweetAlert](https://sweetalert2.github.io/)** is used to display a stylish confirmation alert to users.
 
@@ -15,5 +15,7 @@ This is a static travel website designed to inspire wanderlust and provide infor
 - **JavaScript**
 - **EmailJS**
 - **SweetAlert**
+
+  **Live Preview : https://mj-travel-guru.netlify.app/**
 
 **Feel free to explore the code and contribute!**
