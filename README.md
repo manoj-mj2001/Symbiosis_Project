@@ -16,6 +16,8 @@ This is a static travel website designed to inspire wanderlust and provide infor
 - **EmailJS**
 - **SweetAlert**
 
-  **Live Preview : https://mj-travel-guru.netlify.app/**
+
+### **Live Preview : https://mj-travel-guru.netlify.app/**
+
 
 **Feel free to explore the code and contribute!**
